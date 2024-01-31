@@ -129,8 +129,8 @@
     align-items: center;
     transition: opacity 0.5s ease;
 }
-
-.background-modal:target{
+ /* target Serve para quando alguem clicar em algum botão omde ele vai chamar algum elemento que estava escondido, para ele aparecer em alguym parte da tela*/  
+.background-modal:target{  
     visibility: visible;
     opacity: 1;
 }
@@ -232,7 +232,7 @@
     text-transform: uppercase;
     border-radius: 16px;
     background: var(--Light-Grey, #EEE);
-    overflow: hidden;
+    overflow: hidden; /* Overflow quando é colocado hidden ele esconde o que estiver vazando do elemento*/
 }
 
 .modal-pizza__tamanho{
