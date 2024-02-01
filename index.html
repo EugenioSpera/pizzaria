@@ -62,20 +62,26 @@
         </section>
 
         <aside class="carrinho">
-            <h1 class="carrinho__titulo">Suas Pizzas</h1>
+            <h1 class="carrinho__tx tx--titulo">Suas Pizzas</h1>
             <div class="carrinho__item">
-                <img src="./Images/img-produto01.png" alt="" class="carrinho__item-img">
-                <p class="carrinh__item-descricao">Portuguesa (G)</p>
-                <p class="carrinho__item-preco">R$ 59,90</p>
+                <img src="./Images/img-item@2x.png" alt="" class="carrinho__img">
+                <div class="carrinho__cardapio">
+                <p class="carrinho__tx">Portuguesa (G)
+                <p>
+                <p class="carrinho__tx">R$ 59,90</p></div>
                 <div class="carrinho__qtd-controle">
-                    <button class="carrinho__item-adicionar"></button>
-                    <span class="carrinho__item-qtd"></span>
-                    <button class="carrinho__item-remover"></button>
+                    <button class="carrinho__btn btn--adicionar"><span class="fa-solid fa-plus"></span></button>
+                    <span class="carrinho__qtd">0</span>
+                    <button class="carrinho__btn btn--remover"><span class="fa-solid fa-minus"></span></button>
                 </div>
-
-
+            
+            <div class="carrinho__calculos">
+                <p class="carrinho__tx tx--item">Subtotal: <span class="carrinho__tx tx--valor">R$99,99</span></p>
+                <p class="carrinho__tx tx--item">Desconto 10%: <span class="carrinho__tx tx--valor">R$99,99</span></p>
+                <p class="carrinho__tx tx--total">Valor Total: <span class="carrinho--tx tx--valor-total">R$99,99</span>
+                </p>
+                <button class="carrinho__btn btn--finalizar-compra">Finalizar Compra</button>
             </div>
-
         </aside>
     </main>
 
@@ -91,10 +97,10 @@
             <span class="fa-brands fa-instagram"></span>
         </div>
         <div class="rodape__desenvolvedor">
-            Desenvolvido por XPTO 
+            Desenvolvido por XPTO
             <br> Solucoes Digitais
         </div>
-        
+
     </footer>
 
     <div id="modal" class="background-modal">
