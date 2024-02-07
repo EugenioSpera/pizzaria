@@ -1,0 +1,154 @@
+.carrinho{
+    display: flex;
+    width: 450px;
+    padding: 28px 8px;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    background: var(--Baby-Blue, #E5F4FF);
+    margin-left: auto;
+    
+    
+}
+
+.carrinho__tx h1{
+    color: #000;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.carrinho__tx{
+    align-self: stretch;
+    display: flex;
+    
+    
+}
+.carrinho__cardapio{
+    flex-direction: column;
+
+}
+
+.carrinho__img{
+    display: flex;
+    width: 72px;
+    height: 72px;
+}
+
+.carrinho__item{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 16px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.carrinho__qtd-controle{
+    display: flex;
+    width: 162px;
+    height: 40px;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap-reverse;   
+    border-radius: 16px;
+    background: var(--Light-Grey, #EEE);     
+}
+
+
+
+.tx--item{
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    align-content: center;
+    gap: 16px;
+    align-self: stretch;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--Blue, #1298F8);
+    font-size: 24px;  
+    flex: 1 0 0;
+}
+
+
+.calculo-inicial{
+
+    display: flex;
+   
+    
+}
+
+
+.tx--item{    
+    color: var(--Blue, #1298F8);
+    
+}
+
+    
+
+.carrinho__calculos{
+    width: 100%;
+}
+
+.calculo-final{
+    display: flex;}
+    
+.tx--valor{
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    align-content: center;
+    gap: 16px;
+    align-self: stretch;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--Blue, #1298F8);
+}
+
+.calculo-total{
+    display: flex;
+    justify-content: space-between;
+}
+    
+.tx--total{
+    color: var(--Black, #000);
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.tx--valor-total{
+    color: var(--Black, #000);
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+
+.btn--finalizar-compra{
+    display: flex;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 20px;
+    background: var(--Green, #48D05F);
+    color: #FFF;
+    text-align: center;
+    /* Inter - Paragraph */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+    width: 100%;  
+    margin-top: 10px;
+
+}
