@@ -3,71 +3,71 @@
     --preset--font-size--price: 24px;
     --preset--font-size--destaque: 16px;
     --preset--font-size--paragraph: 16px;
-    --preset--text-transform: uppercase; 
+    --preset--text-transform: uppercase;
     --preset--color--black: #000000;
     --preset--color--dark-gray: #D9D9D9;
     --preset--color--light-gray: #EEEEEE;
     --preset--color--white: #ffffff;
     --preset--color--baby-blue: #E5F4FF;
     --preset--color--blue: #1298F8;
-    --preset--color--green: #48D05F; /* Success */
-    --preset--color--red: #E92929; /* Attention */
+    --preset--color--green: #48D05F;
+    /* Success */
+    --preset--color--red: #E92929;
+    /* Attention */
 }
+
+
 /* Fonts*/
 
-@font-face{
+@font-face {
     font-family: "InterBold";
     src: url(./../Fonts/Inter-Bold.ttf);
 }
 
-@font-face{
+@font-face {
     font-family: "InterRegular";
     src: url(./../Fonts/Inter-Regular.ttf);
 }
 
-@font-face{
+@font-face {
     font-family: "InterLight";
     src: url(./../Fonts/Inter-Light.ttf);
 }
 
+
 /*Topo - header*/
 
-.topo{
+.topo {
     font-size: 1.5rem;
     height: 136px;
     background-color: var(--preset--color--baby-blue);
     display: flex;
-    color: var(--preset--color--black); 
-    justify-content: center;   
-    font-family: "InterBold!";  
+    color: var(--preset--color--black);
+    justify-content: center;
+    font-family: "InterBold!";
     align-items: center;
     gap: 10px;
-    
 }
 
-.topo__marca{
-
-
-}
-
-.topo__titulo{
+.topo__titulo {
     color: var(--preset--color--baby-blue)
 }
 
-.conteudo{
+.conteudo {
     background-color: #ededed;
     padding: 32px 0;
-    
+    display: flex;
+    justify-content: center;
 }
 
-.pizzas-cards{
+.pizzas-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 104px;
 }
 
-.pizzas-card__item{
+.pizzas-card__item {
     display: flex;
     max-width: 200px;
     padding: 64px 32px;
@@ -79,42 +79,39 @@
     text-align: center;
     border-radius: 35px;
     background: #FFF;
-    box-shadow: 0px 8px 23px 0px rgba(0, 0, 0.25);   
-
+    box-shadow: 0px 8px 23px 0px rgba(0, 0, 0.25);
 }
 
-.pizzas-cards__img{
+.pizzas-cards__img {
     width: 200px;
 }
 
-.pizza-cards__btn-add{
+.pizza-cards__btn-add {
     color: #1298F8;
     cursor: pointer;
     font-size: 2rem;
 }
 
-.pizzas-cards__preco{
+.pizzas-cards__preco {
     font-family: "InterLight";
     font-size: 1.5rem;
 }
 
-.pizzas-cards__titulo{
+.pizzas-cards__titulo {
     font-family: InterBold;
     font-size: 2rem;
 }
 
-.pizzas-cards__texto{
+.pizzas-cards__texto {
     font-family: InterRegular;
     font-size: 1rem;
 }
 
-
-
-.modal{
-        display: flex
+.modal {
+    display: flex
 }
 
-.background-modal{
+.background-modal {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.5);
     top: 0;
@@ -122,22 +119,25 @@
     bottom: 0;
     left: 0;
     z-index: 1;
-    visibility:hidden;
+    visibility: hidden;
     opacity: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: opacity 0.5s ease;
 }
- /* target Serve para quando alguem clicar em algum botão omde ele vai chamar algum elemento que estava escondido, para ele aparecer em alguym parte da tela*/  
-.background-modal:target{  
+
+
+/* target Serve para quando alguem clicar em algum botão onde ele vai chamar algum elemento que estava escondido, para ele aparecer em alguym parte da tela*/
+
+.background-modal:target {
     visibility: visible;
     opacity: 1;
 }
 
-.modal-pizza{
-    width: 600px; 
-    min-width: 600px;   
+.modal-pizza {
+    width: 600px;
+    min-width: 600px;
     background: #FFF;
     border-radius: 20px;
     box-shadow: 0px 8px 32px 0px rgba(0, 0, 0.25);
@@ -145,47 +145,43 @@
     justify-content: center;
     align-items: center;
     padding: 16px;
-
 }
 
-.modal-pizza__img{
+.modal-pizza__img {
     width: 200px;
     height: 200px;
     padding: 16px;
 }
 
-.modal-pizza__detalhes{
+.modal-pizza__detalhes {
     display: flex;
     flex-direction: column;
     gap: 24px;
-
-
 }
 
-.modal-pizza__tx-titulo{
+.modal-pizza__tx-titulo {
     font-family: "interBold";
     font-size: 2rem;
 }
 
 .modal-pizza__tx-preco,
-.modal-pizza__tx-tamanho{
+.modal-pizza__tx-tamanho {
     font-family: "InterLight";
     font-size: 1rem;
     text-transform: uppercase;
-
 }
 
-.modal-pizza__preco{
+.modal-pizza__preco {
     display: flex;
 }
 
-.modal-pizza__qtd{
+.modal-pizza__qtd {
     display: flex;
     gap: 16px;
     align-items: center;
 }
 
-.modal-pizza__controle-qtd{
+.modal-pizza__controle-qtd {
     display: flex;
     border-radius: 16px;
     width: 64px;
@@ -194,23 +190,19 @@
     align-items: center;
     background: var(--Light-Grey, #EEE);
     gap: 8px;
-    
 }
 
 .modal-pizza__menos,
-.modal-pizza__mais{
+.modal-pizza__mais {
     cursor: pointer;
     padding: 0px 10px;
     color: #333;
     border: 0;
     background-color: transparent;
     font-size: 16px;
-
 }
 
-
-
-.modal-pizza__btn-fechar{
+.modal-pizza__btn-fechar {
     padding: 8px;
     align-self: flex-end;
     color: #aaa;
@@ -218,60 +210,55 @@
     text-decoration: none;
 }
 
-.modal-pizza__btn-fechar:hover{
+.modal-pizza__btn-fechar:hover {
     color: #bcc;
 }
 
-
-
-.modal-pizza__controle-tamanhos{
-    display: flex;    
+.modal-pizza__controle-tamanhos {
+    display: flex;
     justify-content: center;
     font-family: "InterBold";
     font-size: 1rem;
     text-transform: uppercase;
     border-radius: 16px;
     background: var(--Light-Grey, #EEE);
-    overflow: hidden; /* Overflow quando é colocado hidden ele esconde o que estiver vazando do elemento*/
+    overflow: hidden;
+    /* Overflow quando é colocado hidden ele esconde o que estiver vazando do elemento*/
 }
 
-.modal-pizza__tamanho{
+.modal-pizza__tamanho {
     padding: 8px;
     cursor: pointer;
 }
 
-.modal-pizza__tamanho span{
+.modal-pizza__tamanho span {
     font-size: 0.75rem;
     font-family: "InterLight";
     padding: 10px;
 }
 
-.modal-pizza__tamanho:hover{
+.modal-pizza__tamanho:hover {
     background: var(--Blue, #1298F8);
-
 }
 
-
-
-.modal-pizza__btn--adicionar{
+.modal-pizza__btn--adicionar {
     border-radius: 20px;
     background: var(--Green, #48D05F);
     padding: 16px 32px;
+    cursor: pointer;
 }
 
-.modal-pizza__btn--cancelar{
+.modal-pizza__btn--cancelar {
     border-radius: 20px;
     background: var(--Red, #E92929);
     padding: 16px 32px;
-
+    cursor: pointer;
 }
 
-
-
-.rodape{
+.rodape {
     display: flex;
     flex-direction: row-reverse;
-    text-align: center; 
+    text-align: center;
     height: 144px;
     justify-content: center;
     align-items: center;
@@ -281,11 +268,43 @@
     background: var(--Baby-Blue, #E5F4FF);
     font-family: Inter;
     font-size: 16px;
-
-
-
-
-
 }
 
-@media max
+@media screen and (max-width: 600px) {
+    .rodape {
+        flex-direction: column;
+        height: auto;
+        padding: 24px 0;
+        gap: 16px;
+    }
+    .modal {
+        flex-direction: column;
+    }
+    .carrinho {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .background-carrinho:has(.carrinho: target) {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+    }
+    .carrinho:target {
+        overflow-y: scroll;
+        position: absolute;
+    }
+    .rodape {
+        background-color: #e5f4ff;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        line-height: 1.5rem;
+    }
+}

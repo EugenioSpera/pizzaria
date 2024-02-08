@@ -61,58 +61,64 @@
 
 
         </section>
+        <div class="background-carrinho">
+            <aside class="carrinho" id="carrinho">
+                <div class="carrinho__topo">
 
-        <aside class="carrinho">
-            <h1 class="carrinho__tx tx--titulo">Suas Pizzas</h1>
-            <div class="carrinho__item">
-                <img src="./Images/img-item@2x.png" alt="" class="carrinho__img">
-                <div class="carrinho__cardapio">
-                    <p class="carrinho__tx">Mozzarella (G)
-                    <p>
-                    <p class="carrinho__tx">R$ 59,90</p>
+                    <h1 class="carrinho__tx tx--titulo">Suas Pizzas</h1>
+
+                    <a href="#" class="carrinho__btn-fechar">Fechar</a>
                 </div>
-
-                <div class="carrinho__qtd-controle">
-                    <button class="carrinho__btn btn--adicionar"><span class="fa-solid fa-plus"></span></button>
-                    <span class="carrinho__qtd">0</span>
-                    <button class="carrinho__btn btn--remover"><span class="fa-solid fa-minus"></span></button>
-                </div>
-
                 <div class="carrinho__item">
                     <img src="./Images/img-item@2x.png" alt="" class="carrinho__img">
-
                     <div class="carrinho__cardapio">
-                        <p class="carrinho__tx">Portuguesa (G)
-                        <p>
-                        <p class="carrinho__tx">R$ 59,90</p>
+                        <p class="carrinho__tx">Mozzarella (G)
+                            <p>
+                                <p class="carrinho__tx">R$ 59,90</p>
                     </div>
+
                     <div class="carrinho__qtd-controle">
                         <button class="carrinho__btn btn--adicionar"><span class="fa-solid fa-plus"></span></button>
                         <span class="carrinho__qtd">0</span>
                         <button class="carrinho__btn btn--remover"><span class="fa-solid fa-minus"></span></button>
                     </div>
 
-                    <div class="carrinho__calculos">
-                        <div class="calculo-inicial">
+                    <div class="carrinho__item">
+                        <img src="./Images/img-item@2x.png" alt="" class="carrinho__img">
 
-                            <span class="carrinho__tx tx--item"> Subtotal:</span>
-                            <span class="carrinho__tx tx--valor">R$99,99</span>
+                        <div class="carrinho__cardapio">
+                            <p class="carrinho__tx">Portuguesa (G)
+                                <p>
+                                    <p class="carrinho__tx">R$ 59,90</p>
+                        </div>
+                        <div class="carrinho__qtd-controle">
+                            <button class="carrinho__btn btn--adicionar"><span class="fa-solid fa-plus"></span></button>
+                            <span class="carrinho__qtd">0</span>
+                            <button class="carrinho__btn btn--remover"><span class="fa-solid fa-minus"></span></button>
                         </div>
 
-                        <div class="calculo-final">
+                        <div class="carrinho__calculos">
+                            <div class="calculo-inicial">
 
-                            <span class="carrinho__tx tx--item">Desconto 10%: </span>
-                            <span class="carrinho__tx tx--valor">R$99,99</span>
-                        </div>
+                                <span class="carrinho__tx tx--item"> Subtotal:</span>
+                                <span class="carrinho__tx tx--valor">R$99,99</span>
+                            </div>
 
-                        <div class="calculo-total">
+                            <div class="calculo-final">
+
+                                <span class="carrinho__tx tx--item">Desconto 10%: </span>
+                                <span class="carrinho__tx tx--valor">R$99,99</span>
+                            </div>
+
+                            <div class="calculo-total">
                                 <span class="carrinho__tx tx--total">Valor Total:</span>
                                 <span class="carrinho--tx tx--valor-total">R$99,99</span>
-                        
-                    </div>
-                        <button class="carrinho__btn btn--finalizar-compra">Finalizar Compra</button>
-                    </div>
-        </aside>
+
+                            </div>
+                            <button class="carrinho__btn btn--finalizar-compra">Finalizar Compra</button>
+                        </div>
+            </aside>
+            </div>
     </main>
 
     <footer class="rodape">
@@ -155,9 +161,11 @@
                         <button class="modal-pizza__mais">+</button>
                     </div>
                 </div>
-                <div class="modal-pizza-btns">
-                    <button class="modal-pizza__btn modal-pizza__btn--adicionar">Adicionar ao carrinho</button>
-                    <button class="modal-pizza__btn modal-pizza__btn--cancelar">Cancelar</button>
+                <div class="modal-pizza__btns-area">
+                    <a class="modal-pizza__btn modal-pizza__btn--adicionar" href="#carrinho">Adicionar ao carrinho</a>
+
+                    <a class="modal-pizza__btn modal-pizza__btn--cancelar" href="#">Cancelar</a>
+
                 </div>
             </div>
         </div>
